@@ -77,7 +77,6 @@ p {
 .form :where(input, button) {
   width: 80%;
   margin: auto;
-  text-transform: uppercase;
   align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
@@ -100,13 +99,14 @@ p {
   white-space: nowrap;
   cursor: pointer;
 }
-
+.form :where(button) {
+  text-transform: uppercase;
+}
 input {
   background-color: rgb(239, 239, 239);
   font-size: 18px;
   padding: 0 17px;
   border: 1px solid #999;
-  text-transform: lowercase;
 }
 .ResultUpdate {
   margin: auto;
