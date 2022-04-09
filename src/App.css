@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /*background-color: #3498DB;*/
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+}
+
+.wrapper {
+  background-color: white;
+  width: 510px;
+  height: 430px;
+  border-radius: 7px;
+  padding: 16px 25px;
+}
+h1 {
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+p {
+  display: block;
+  margin-top: 5px;
+  color: #474747;
+  font-size: 16px;
+}
+
+.wrapper .form {
+  margin: 20px 0 30px;
+}
+.form :where(input, button) {
+  width: 80%;
+  margin: auto;
+  text-transform: uppercase;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+input {
+  background-color: rgb(239, 239, 239);
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+  text-transform: lowercase;
+}
+.ResultUpdate {
+  margin: auto;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border-radius: 7px;
+  height: 20px;
+  width: 80%;
+  color: white;
+}
+.hide-block {
+  display: none;
+}
+.UpdateButton {
+  height: 50px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgray;
+  opacity: 1; /* Firefox */
+}
+
+.button:active,
+.button:hover {
+  outline: 0;
+}
+@media (min-width: 768px) {
+  .button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
